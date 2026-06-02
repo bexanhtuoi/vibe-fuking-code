@@ -1,0 +1,31 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  "mcp": {
+     "codegraph": {
+    "type": "local",
+    "command": [
+      "codegraph",
+      "serve",
+      "--mcp"
+    ],
+    "enabled": true
+  },
+    "obsidian-vault": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@mauricio.wolff/mcp-obsidian",
+        "C:/Users/PC/Documents/Obsidian Vault"
+      ],
+      "enabled": true,
+      "timeout": 60000
+    }
+  },
+
+  "instructions": [
+    "AGENTS.md",
+    "rules/*.md"
+  ]
+}
