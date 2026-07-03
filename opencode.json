@@ -15,7 +15,7 @@
       "type": "local",
       "command": [
         "npx",
-        "-y",
+        "-y", 
         "@mauricio.wolff/mcp-obsidian",
         "C:/Users/PC/Documents/Obsidian Vault"
       ],
@@ -36,6 +36,9 @@
 
   },
   "instructions": [
-    ".opencode/AGENTS.md"
+    ".opencode/AGENTS.md",
+    ".opencode/rules/python-coding-style.md",
+    ".opencode/rules/api-design.md",
+    ".opencode/rules/backend-architecture.md"
   ]
 }
