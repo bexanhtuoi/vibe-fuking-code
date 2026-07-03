@@ -21,11 +21,21 @@
       ],
       "enabled": true,
       "timeout": 60000
+    },
+    "jina": {
+      "type": "remote",
+      "url": "https://mcp.jina.ai/v1",
+      "headers": {
+        "Authorization": "Bearer jina_837731f6b2964b78bcd94df2e2cce4b98usrp9lKpI9m6Yfcm8xVK8CBQZQw"
+      }
+    },
+    "chrome-devtools": {
+      "type": "local",
+      "command": ["npx", "-y", "chrome-devtools-mcp@latest"]
     }
-  },
 
+  },
   "instructions": [
-    "AGENTS.md",
-    "rules/*.md"
+    ".opencode/AGENTS.md"
   ]
 }
