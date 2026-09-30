@@ -45,7 +45,9 @@ Tên phải rõ nghĩa, tránh viết tắt nếu không phổ biến.
 - Ưu tiên `early return` để giảm lồng điều kiện.
 - Khuyến nghị không quá 50 dòng.
 - Sử dụng type hint đầy đủ, ưu tiên Optional[str] hay List[str] thay vì str | None hay list[str].
-- Nên tổ chức bên trong hàm giản cách ra và có comment tự nhiên, dễ hiểu cho từng dòng giản cách.
+- BẮT BUỘC dãn cách: dòng trống sau MỖI câu lệnh/khối logic (kể cả 2 phép gán liên tiếp cũng cách nhau), trước/sau mỗi khối if/for/while/try, giữa các bước xử lý.
+- Dict/list nhiều key thì mỗi key 1 dòng.
+- KHÔNG viết comment trang trí/docstring dư thừa — chỉ giữ comment theo bước (đánh số) hoặc ghi chú ràng buộc quan trọng, luôn tiếng Việt có dấu.
 - Nếu bên trong hàm có thể phân nhỏ ra thành các hàm con để tái sử dụng cho lần sau thì hãy phân nhỏ ra và gọi các hàm con đó thay vì ném hết vào 1 hàm duy nhất.
 
 ### Nên
@@ -60,13 +62,10 @@ def sum_of_squares(a: float, b: float) -> float:
 
 
 def calculate_distance(x: float, y: float) -> float:
-    # Tính tổng bình phương hai tọa độ
     total = sum_of_squares(x, y)
 
-    # Tính khoảng cách theo định lý Pythagoras
     distance = total ** 0.5
 
-    # Trả về kết quả
     return distance
 ```
 
